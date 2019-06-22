@@ -13,6 +13,11 @@ public class UserController {
     @Autowired
     UserService userService;
 
+    @GetMapping("/")
+    public String root(){
+        return "Welcome to Users";
+    }
+
     @GetMapping("/users")
     public List<User> getAll(){
         return userService.findAllUsers();
