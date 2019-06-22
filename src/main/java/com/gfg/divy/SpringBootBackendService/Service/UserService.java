@@ -30,7 +30,6 @@ public class UserService {
         if(user.isPresent()){
             return user.get();
         }
-
         return null;
     }
 
