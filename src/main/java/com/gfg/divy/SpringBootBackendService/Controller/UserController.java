@@ -15,7 +15,12 @@ public class UserController {
 
     @GetMapping("/")
     public String root(){
-        return "Welcome to Users";
+        return "Welcome to Spring.";
+    }
+
+    @GetMapping("/createUser")
+    public String createUser(){
+        return "CreateUser";
     }
 
     @GetMapping("/users")
